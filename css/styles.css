@@ -51,6 +51,11 @@ body {
 
 .index-main {
     grid-area: body;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: "a"
+        "b"
+        "c";
 }
 
 header {
@@ -72,9 +77,9 @@ header {
 footer {
     grid-area: footer;
     background-color: var(--gunmetal);
-    font-size: 10pt; 
-    color: var(--mint-cream); 
-    display: flex; 
+    font-size: 10pt;
+    color: var(--mint-cream);
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -124,8 +129,14 @@ main {
     background-color: var(--dark-purple);
 }
 
+.general {
+    grid-area: a;
+    height: 50%;
+}
 
 .links {
+    grid-area: b;
+    height: 100%;
     display: grid;
     grid-template-areas: "one two three four";
     grid-template-columns: repeat(4, 1fr);
@@ -134,6 +145,8 @@ main {
 }
 
 .final-links {
+    grid-area: c;
+    height: 100%;
     display: grid;
     grid-template-areas: "final1 final2";
     grid-template-columns: repeat(2, 1fr);
@@ -255,9 +268,9 @@ a:hover {
 
     .extra-links {
         grid-template-areas: "l1"
-        "l2"
-        "l3"; 
-        grid-template-rows: repeat(3, 1fr); 
+            "l2"
+            "l3";
+        grid-template-rows: repeat(3, 1fr);
     }
 
     section h2 {
