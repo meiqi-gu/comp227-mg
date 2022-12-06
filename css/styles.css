@@ -178,30 +178,6 @@ main {
     grid-area: final2;
 }
 
-/*.extra-links {
-    display: grid;
-    grid-template-areas: "l1 l2 l3";
-    min-height: 100px;
-}
-
-.extra1 {
-    grid-area: l1;
-    background-color: #2E2836;
-
-}
-
-.extra2 {
-    grid-area: l2;
-    background-color: #2E2836;
-
-}
-
-.extra3 {
-    grid-area: l3;
-    background-color: #D5D8D2;
-    color: black; 
-}*/
-
 a {
     text-decoration: none;
     color: black;
@@ -277,6 +253,9 @@ a:hover {
         text-align: center;
     }
 
+    .index-main {
+        grid-template-rows: auto auto auto;
+    }
 }
 
 @media screen and (max-width: 950px) {
