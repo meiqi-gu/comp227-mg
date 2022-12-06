@@ -6,12 +6,13 @@
     --gunmetal: #19323cff;
     --mint-cream: rgb(243, 247, 240);
     --eerie-black: #151515ff;
+    --dark-grey: rgb(54, 85, 96); 
     --sweet-brown: #a63d40ff;
     --earth-yellow: #e9b872ff;
     --asparagus: #90a959ff;
     --air-superiority-blue: #6494aaff;
     --lighter-blue: #7FC8F8;
-    --dark-purple: #6D466B;
+    --dark-purple: rgb(109, 70, 107);
 }
 
 * {
@@ -52,10 +53,11 @@ body {
 .index-main {
     grid-area: body;
     display: grid;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
     grid-template-areas: "a"
         "b"
-        "c";
+        "c"
+        "d";
 }
 
 header {
@@ -152,6 +154,14 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     min-height: 150px;
+}
+
+.extra {
+    grid-area: d; 
+    display: grid; 
+}
+.extra-btn {
+    background-color: var(--dark-grey);
 }
 
 .one {
@@ -253,7 +263,10 @@ a:hover {
     }
 
     .index-main {
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    .extra-btn {
+        min-height: 95px;
     }
 }
 
