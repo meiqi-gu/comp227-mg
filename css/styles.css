@@ -194,10 +194,9 @@ a:hover {
     grid-template-areas: "header header header"
         "blank sample b2"
         "blank instructions b2";
-    grid-template-rows: auto 0.5fr 3fr 1fr;
+    grid-template-rows: auto 5fr 2fr;
     grid-template-columns: 0.1fr 0.8fr 0.1fr;
     height: 100vh;
-
 }
 
 .header-steps {
