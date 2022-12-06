@@ -1,1 +1,1 @@
-# comp227-mg
+# Final Project for COMP 227
