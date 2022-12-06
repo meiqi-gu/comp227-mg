@@ -1,0 +1,70 @@
+:root {
+    --sizzling-red: #f2545bff;
+    --amaranth-purple: #a93f55ff;
+    --gunmetal: #19323cff;
+    --mint-cream: #f3f7f0ff;
+    --eerie-black: #151515ff;
+    --sweet-brown: #a63d40ff;
+    --earth-yellow: #e9b872ff;
+    --asparagus: #90a959ff;
+    --air-superiority-blue: #6494aaff;
+    --lighter-blue: #7FC8F8;
+}
+
+.container-s3 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-areas: "strawberry raspberry blackberry"
+        "blueberry apple apple"
+        "blueberry mango mango";
+    background-color: var(--air-superiority-blue);
+}
+
+.top1 {
+    grid-area: strawberry;
+}
+
+.top2 {
+    grid-area: raspberry;
+}
+
+.top3 {
+    grid-area: blackberry;
+}
+
+.right1 {
+    grid-area: apple;
+}
+
+.right2 {
+    grid-area: mango;
+}
+
+.left-grid {
+    grid-area: blueberry;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "floor"
+        "tower"
+        "skyscraper";
+
+}
+
+.left1 {
+    grid-area: floor;
+}
+
+.left2 {
+    grid-area: tower;
+}
+
+.left3 {
+    grid-area: skyscraper;
+}
+
+.border {
+    border: 2px solid var(--eerie-black);
+}

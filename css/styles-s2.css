@@ -1,0 +1,31 @@
+:root {
+    --sizzling-red: #f2545bff;
+    --amaranth-purple: #a93f55ff;
+    --gunmetal: #19323cff;
+    --mint-cream: #f3f7f0ff;
+    --eerie-black: #151515ff;
+    --sweet-brown: #a63d40ff;
+    --earth-yellow: #e9b872ff;
+    --asparagus: #90a959ff;
+    --air-superiority-blue: #6494aaff;
+    --lighter-blue: #7FC8F8;
+}
+
+.container-s2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--asparagus);
+}
+
+.top {
+    flex: 1 1 auto;
+}
+
+.bottom {
+    flex: 1 1 auto;
+}
+
+.border {
+    border: 2px solid var(--eerie-black);
+}
