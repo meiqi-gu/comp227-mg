@@ -23,7 +23,7 @@
     background-color: var(--sweet-brown);
 }
 
-/* From STEP 3*/
+/* From GRID TWO*/
 .no-octo {
     flex: 1 1 auto;
     display: grid;
@@ -32,7 +32,7 @@
     grid-template-areas: "strawberry raspberry blackberry"
         "blueberry apple apple"
         "blueberry mango mango";
-    background-color: var(--air-superiority-blue);
+    background-color: var(--amaranth-purple);
 }
 
 .top1 {
@@ -83,12 +83,12 @@
     flex-direction: column;
 }
 
-/*From STEP 2*/
+/*From FLEX 1*/
 .flapjack-octo {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    background-color: var(--asparagus);
+    background-color: var(--earth-yellow);
 }
 
 .top {
@@ -99,13 +99,13 @@
     height: 50%;
 }
 
-/*From STEP 4*/
+/*From FLEX TWO*/
 .dumbo-octo {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: var(--amaranth-purple);
+    background-color: var(--asparagus);
 }
 
 .mini-flex {
@@ -139,14 +139,14 @@
     flex: 1 1 auto;
 }
 
-/*From STEP 1*/
+/*From GRID 1*/
 .ghost-octo {
     flex: 1 1 auto;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
-    background-color: var(--earth-yellow);
+    background-color: var(--air-superiority-blue);
 
 }
 

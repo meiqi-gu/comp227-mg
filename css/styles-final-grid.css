@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: var(--amaranth-purple);
+    background-color: var(--asparagus);
 }
 
 .mini-flex {
@@ -68,7 +68,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
-    background-color: var(--earth-yellow);
+    background-color: var(--air-superiority-blue);
 
 }
 
@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: var(--asparagus);
+    background-color: var(--earth-yellow);
 }
 
 .top {
@@ -117,7 +117,7 @@
     grid-template-areas: "strawberry raspberry blackberry"
         "blueberry apple apple"
         "blueberry mango mango";
-    background-color: var(--air-superiority-blue);
+    background-color: var(--amaranth-purple);
 }
 
 .top1 {
