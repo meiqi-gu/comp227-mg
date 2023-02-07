@@ -13,6 +13,7 @@
     --air-superiority-blue: #6494aaff;
     --lighter-blue: #7FC8F8;
     --dark-purple: rgb(109, 70, 107);
+    --rose-taupe: #546D64; 
 }
 
 * {
@@ -130,6 +131,13 @@ main {
 .purple2-bg {
     background-color: var(--dark-purple);
 }
+.rose-bg{
+    background-color: var(--rose-taupe);
+}
+
+.orange-bg {
+    background-color: #C2510A;
+}
 
 .general {
     grid-area: a;
@@ -150,8 +158,8 @@ main {
     grid-area: c;
     height: 100%;
     display: grid;
-    grid-template-areas: "final1 final2";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "i1 final1 i2 final2";
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     min-height: 150px;
 }
@@ -245,7 +253,9 @@ a:hover {
     }
 
     .final-links {
-        grid-template-areas: "final1"
+        grid-template-areas: "i1"
+            "final1"
+            "i2"
             "final2";
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);

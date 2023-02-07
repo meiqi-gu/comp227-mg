@@ -1,0 +1,109 @@
+:root {
+    --sizzling-red: #f2545bff;
+    --amaranth-purple: #a93f55ff;
+    --gunmetal: #19323cff;
+    --mint-cream: rgb(243, 247, 240);
+    --eerie-black: #151515ff;
+    --dark-grey: rgb(54, 85, 96);
+    --sweet-brown: #a63d40ff;
+    --earth-yellow: #e9b872ff;
+    --asparagus: #90a959ff;
+    --air-superiority-blue: #6494aaff;
+    --lighter-blue: #7FC8F8;
+    --dark-purple: rgb(109, 70, 107);
+}
+.border {
+    border: 2px solid var(--eerie-black);
+}
+.container-extra-grid {
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr; 
+    grid-template-areas: "p1"
+                        "p2";                   
+}
+
+.container-s1 {
+    grid-area: p1; 
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--air-superiority-blue);
+
+}
+
+.tl {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.tr {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.bl {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.br {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.container-s3 {
+    grid-area: p2; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-areas: "strawberry raspberry blackberry"
+        "blueberry apple apple"
+        "blueberry mango mango";
+    background-color: var(--amaranth-purple);
+}
+
+.top1 {
+    grid-area: strawberry;
+}
+
+.top2 {
+    grid-area: raspberry;
+}
+
+.top3 {
+    grid-area: blackberry;
+}
+
+.right1 {
+    grid-area: apple;
+}
+
+.right2 {
+    grid-area: mango;
+}
+
+.left-grid {
+    grid-area: blueberry;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "floor"
+        "tower"
+        "skyscraper";
+
+}
+
+.left1 {
+    grid-area: floor;
+}
+
+.left2 {
+    grid-area: tower;
+}
+
+.left3 {
+    grid-area: skyscraper;
+}
